@@ -24,6 +24,11 @@ die "aborting; no dir or repo given\n"
     if @ARGV < 1;
 my $repo = shift;
 
+# check
+if (-e ".git") {
+    die "aborting; cannot pushdir an entire Git repository\n";
+}
+
 # create temporary dir
 my $tempdir = tempdir(CLEANUP => 1);
 
