@@ -1,0 +1,23 @@
+NAME
+    git-pushdir - push files in current directory to a Git repository
+
+SYNOPSIS
+    % git-pushdir -m 'commit message' <git-repo-url>
+
+OPTIONS
+    -m <message>
+        commit message (mandatory)
+
+    -b <branch>
+        name of the branch to which the files should be pushed (default:
+        master)
+
+AUTHOR
+    Kazuho Oku
+
+SOURCE REPOSITORY
+    https://github.com/kazuho/kaztools
+
+LICENSE
+    MIT
+
